@@ -2,14 +2,16 @@
     display: flex;
     font-family: sans-serif;
     background: #262626;
-	min-height: 90em;
+	min-height: 100em;
+	max-width: 800px;
+	min-width: 800px;
 	
 }
 .container {
   width: 17em;
   position: absolute;
   
-  bottom: -100px; 
+  bottom: -290px; 
   right: 10;
   left: 0
 }
@@ -75,9 +77,9 @@
   width: 60%;
   position: absolute;
 
-  bottom: -50%;
-  right: 10;
-  left: 22%
+  bottom: -60%;
+  right: 10%;
+  left: 300px;
 }
 
 .content-sec {
@@ -86,7 +88,7 @@
 
   bottom: -10%;
   right: 10;
-  left: 22%
+  left: 300px;
 }
 button {
             display: block;
