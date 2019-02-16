@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bzzz</title>
+<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/lib.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+  <style>
+.Absolute-Center
+{
+  margin: auto;
+  position: absolute;
+  top: -1; left: 10; bottom: 0; right: 0;
+}
+</style>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/simplebox_util.js"></script>
+
+</head>
+
+<body>
+<figure>
+<header>
+<!--  <h1>123</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" style="color: #FF8C00">Главная</a></li>
+        <li><a href="about.html" style="color: #FF8C00">О породе</a></li>
+        <li><a href="test.html" style="color: #FF8C00">Здоровье</a></li>
+      </ul>
+    </nav> -->
+
+
+    <a href="index.html" class="buttonq orange">ГЛАВНАЯ</a>
+    <a href="bee2.html" class="buttonq orange">КОНТАКТЫ</a>
+    <a href="bee4.html" class="buttonq orange">ГАЛЕРЕЯ</a>
+    <a href="test.html" class="buttonq orange">ПРОДУКЦИЯ</a>
+    <a href="bee3.html" class="buttonq orange">ИГРЫ</a>
+    <!--<buttont class="button orange" id="red2" onClick='location.href="test.html"'>RED</buttont>
+    <buttont id="blue">BLUE</buttont>
+    <buttont id="green">GREEN</buttont>
+    <buttont id="orange">ORANGE</buttont>-->
+   <!-- <buttont id="yellow"><a class="notpodcherk" href="test.html" style="color: #FF8C00">YELLOW</a></buttont>-->
+
+
+
+
+  </header>
+    </figure>
+</body>
+<body>
+<figure>
+
+<!--<figcaption>Подпись сверху</figcaption>-->
+
+    <div class="container">
+<figcaption>Пожалуйста, оцените качество нашего мёда</figcaption>
+            <form class="toggle">
+
+            <input type="radio" id="but1" name="but" />
+            <label for="but1"><span class="fas fa-smile"></label>
+
+
+            <input type="radio" id="but2" name="but" />
+            <label for="but2"><span class="fas fa-frown"></label>
+
+            <div id="flap"></div>
+
+        </form>
+
+<button id="red">Голосовать</button>
+
+    </div>
+</figure>
+    <script>
+        let st = {};
+        st.flap = document.querySelector("#flap");
+        st.toggle = document.querySelector(".toggle");
+        st.but1 = document.querySelector("#but1");
+        st.but2 = document.querySelector("#but2");
+        st.flap.addEventListener("transitionend", () => {
+            if (st.but1.checked) {
+                st.toggle.style.transform = "rotateY(-15deg)";
+                setTimeout(() => st.toggle.style.transform = "", 400);
+            } else {
+                st.toggle.style.transform = "rotateY(15deg)";
+                setTimeout(() => st.toggle.style.transform = "", 400)
+            }
+        })
+        st.clickHandler = (e) => {
+            if (e.target.tagName === "LABEL") {
+                setTimeout(() => {
+                    st.flap.children[0].textContent = e.target.textContent;},250);
+                }
+            }
+        document.addEventListener("DOMContentLoaded", () => {
+            st.flap.children[0].textContent = st.but2.nextElementSibling.textContent;
+        });
+        document.addEventListener("click",(e)=>st.clickHandler(e))
+    </script>
+    <script>
+
+        document.getElementById("red").addEventListener("click", clickFunction)
+
+        function clickFunction() {
+            alert("Спасибо за отзыв. Ваше мнение обязательно будет передано нашим пчёлкам")
+        }
+
+    </script>
+
+</body>
+
+
+<body id="body" class="dark-mode">
+  <h1></h1>
+
+  <style>
+.Absolute-Center
+{
+  position: fixed;
+  bottom: 0; left: 0;
+}
+</style>
+
+  <style>
+
+</style>
+
+<div class = "Absolute-Center">
+    <buttonnn style = "font-size:20px" type="button" name="dark_light" onclick="toggleDarkLight()" title=""><span class="fas fa-cloud-sun"> DARK/LIGHT</buttonnn>
+
+    <p></p>
+</div>
+
+<script type="text/javascript">
+function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+    </script>
+</body>
+
+ <div class = "Absolute-Center">
+ <body>
+
+    <footer>
+      <small>Copyright © <time datetime="2016">2016</time> Частная пасека Алтая; 8(923)243-99-95</small>
+    </footer>
+</body>
+ </div>
+
+<body>
+  <figure>
+   <img src="image/1.jpg" width="400" height="225" alt="Наш генеральный директор">
+
+      <script src="//code.jquery.com/jquery-latest.js"></script>
+<script>
+    $('img').width(400).hover(function(){
+    $(this).stop().animate({width: 650, height: 366});
+    },
+    function(){
+        $(this).stop().animate({width: 400, height: 225});
+    });
+</script>
+
+      <figcaption>Наш медовый сомелье <span class="fas fa-wine-glass-alt"></figcaption>
+  </figure>
+   </body>
+
+<main>
+    <font color="#FF8C00">
+    <section>
+        <h3>Вся продукция сертифицирована и соответсвует национальному стандарту Российской Федерации</h3>
+        <p>ГОСТ Р 54386-2011</p>
+        <p>"Мед. Методы определения активности сахаразы, диастазного числа, нерастворимого вещества"</p>
+
+        <p>Honey. Methods for determination of succharase activity, diastase value, insoluble matter</p>
+      </section>
+      <section id="app">
+        <h3>ОКВЭД</h3>
+          <p>52.27.39 («Розничная торговля прочими пищевыми продуктами»)</p>
+      </section>
+        </font>
+    </main>
+
+<div class="content">
+    <main>
+    <font color="#FF8C00">
+    <section>
+        <h3>Партнёрство</h3>
+        <p>Наш натуральный, высококачественный мёд можно найти в магазинах крупных продуктовых сетей Алтайского края и Новосибирской области таких, как: "<font color="d4bf24">ЛЕНТА</font>", "<font color="d42424">Горожанка</font>", "<font color="1340d4">Быстроном</font>", "<font color="05ab10">Мария-ра</font>" и других.</p>
+      </section>
+        <ul id="portfolio">
+   <li class="cms design portfolio-item">
+      <img src="image/bi.jpg" width="200" height="200" class="superbox-img"/>
+    </li>
+            <li class="cms design portfolio-item">
+      <img src="image/le.jpg" width="200" height="200" class="superbox-img"/>
+    </li>
+            <li class="cms design portfolio-item">
+      <img src="image/go.jpg" width="200" height="200" class="superbox-img"/>
+    </li>
+            <li class="cms design portfolio-item">
+      <img src="image/ma.jpg" width="200" height="200" class="superbox-img"/>
+      </li>
+        </ul>
+      <section id="app">
+        <h3>Производство</h3>
+          <p>Мы производим мёд высокого качества на собственных пасеках. Пасека "Bzzz медослав" расположена в экологически чистом районе Алтайского края. Богатая природа и совместный труд людей - всё это позволяет собирать разные сорта мёда, которые обладают целебными свойствами. Натуральный мед полезен для здоровья и укрепляет иммунитет.
+Мы работаем, чтобы натуральный мёд был в шаговой доступности по приемлемой цене от производителя. Имеются противопоказания. перед употреблением рекомендуется проконсультироваться с врачом</p>
+      </section>
+        </font>
+    </main>
+
+</div>
+
+</html>
+
+
+
+
+

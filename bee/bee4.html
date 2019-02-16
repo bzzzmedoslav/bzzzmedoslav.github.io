@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bzzz</title>
+<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/lib.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+  <style>
+.Absolute-Center
+{
+  margin: auto;
+  position: absolute;
+  top: -1; left: 10; bottom: 0; right: 0;
+}
+</style>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/simplebox_util.js"></script>
+
+</head>
+<body>
+<figure>
+<header>
+<!--  <h1>123</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" style="color: #FF8C00">Главная</a></li>
+        <li><a href="about.html" style="color: #FF8C00">О породе</a></li>
+        <li><a href="test.html" style="color: #FF8C00">Здоровье</a></li>
+      </ul>
+    </nav> -->
+
+
+    <a href="index.html" class="buttonq orange">ГЛАВНАЯ</a>
+    <a href="bee2.html" class="buttonq orange">КОНТАКТЫ</a>
+    <a href="bee4.html" class="buttonq orange">ГАЛЕРЕЯ</a>
+    <a href="test.html" class="buttonq orange">ПРОДУКЦИЯ</a>
+    <a href="bee3.html" class="buttonq orange">ИГРЫ</a>
+    <!--<buttont class="button orange" id="red2" onClick='location.href="test.html"'>RED</buttont>
+    <buttont id="blue">BLUE</buttont>
+    <buttont id="green">GREEN</buttont>
+    <buttont id="orange">ORANGE</buttont>-->
+   <!-- <buttont id="yellow"><a class="notpodcherk" href="test.html" style="color: #FF8C00">YELLOW</a></buttont>-->
+
+
+
+
+  </header>
+    </figure>
+</body>
+<body>
+<figure>
+
+<!--<figcaption>Подпись сверху</figcaption>-->
+
+    <div class="container">
+<figcaption>Пожалуйста, оцените качество нашего мёда</figcaption>
+            <form class="toggle">
+
+            <input type="radio" id="but1" name="but" />
+            <label for="but1"><span class="fas fa-smile"></label>
+
+
+            <input type="radio" id="but2" name="but" />
+            <label for="but2"><span class="fas fa-frown"></label>
+
+            <div id="flap"></div>
+
+        </form>
+
+<button id="red">Голосовать</button>
+
+    </div>
+</figure>
+    <script>
+        let st = {};
+        st.flap = document.querySelector("#flap");
+        st.toggle = document.querySelector(".toggle");
+        st.but1 = document.querySelector("#but1");
+        st.but2 = document.querySelector("#but2");
+        st.flap.addEventListener("transitionend", () => {
+            if (st.but1.checked) {
+                st.toggle.style.transform = "rotateY(-15deg)";
+                setTimeout(() => st.toggle.style.transform = "", 400);
+            } else {
+                st.toggle.style.transform = "rotateY(15deg)";
+                setTimeout(() => st.toggle.style.transform = "", 400)
+            }
+        })
+        st.clickHandler = (e) => {
+            if (e.target.tagName === "LABEL") {
+                setTimeout(() => {
+                    st.flap.children[0].textContent = e.target.textContent;},250);
+                }
+            }
+        document.addEventListener("DOMContentLoaded", () => {
+            st.flap.children[0].textContent = st.but2.nextElementSibling.textContent;
+        });
+        document.addEventListener("click",(e)=>st.clickHandler(e))
+    </script>
+    <script>
+
+        document.getElementById("red").addEventListener("click", clickFunction)
+
+        function clickFunction() {
+            alert("Спасибо за отзыв. Ваше мнение обязательно будет передано нашим пчёлкам")
+        }
+
+    </script>
+
+</body>
+<body>
+ 	<div id="wrapper">
+
+<ul id="portfolio">
+   <li class="cms design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper1.jpg"><img src="image/beekeeper1-1.jpg" width="200" height="200" class="superbox-img"/></a>
+       <script src="//code.jquery.com/jquery-latest.js"></script>
+      Алтайский мёд
+    </li>
+
+    <li class="integration portfolio-item">
+      <a rel="simplebox" href="image/beekeeper2.jpg"><img  src="image/beekeeper2-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Алтайский мёд
+    </li>
+
+    <li class="cms design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper3.jpg"><img  src="image/beekeeper3-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Алтайский мёд
+    </li>
+
+    <li class="design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper4.jpg"><img src="image/beekeeper4-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Алтайский мёд
+    </li>
+
+    <li class="cms design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper5.jpg"><img src="image/beekeeper5-1.jpg" width="200" height="200"  class="superbox-img"/></a>
+      Подарочный бочонок
+    </li>
+
+    <li class="design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper6.jpg"><img src="image/beekeeper6-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Наша пасека
+    </li>
+
+    <li class="cms development portfolio-item">
+      <a rel="simplebox" href="image/beekeeper17.jpg"><img src="image/beekeeper17-1.jpg" width="200" height="200"  class="superbox-img"/></a>
+      В форме медведя
+    </li>
+
+
+    <li class=" cms design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper8.jpg"><img src="image/beekeeper8-1.jpg" width="200" height="200"  class="superbox-img"/></a>
+      Сортировка мёда
+    </li>
+
+
+    <li class=" integration portfolio-item">
+      <a rel="simplebox" href="image/beekeeper9.jpg"><img src="image/beekeeper9-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Сортировка мёда
+    </li>
+
+    <li class=" cms design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper10.jpg"><img src="image/beekeeper10-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Сортировка мёда
+    </li>
+
+    <li class="design development portfolio-item">
+      <a rel="simplebox" href="image/beekeeper11.jpg"><img src="image/beekeeper11-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Сортировка мёда
+    </li>
+
+    <li class=" cms design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper12.jpg"><img src="image/beekeeper12-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Сортировка мёда
+    </li>
+
+    <li class=" integration portfolio-item">
+      <a rel="simplebox" href="image/beekeeper13.jpg"><img src="image/beekeeper13-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Алтайский мёд
+    </li>
+
+
+    <li class="design development portfolio-item">
+      <a rel="simplebox" href="image/beekeeper14.jpg"><img  src="image/beekeeper14-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Этикетки
+    </li>
+
+    <li class="design portfolio-item">
+      <a rel="simplebox" href="image/beekeeper15.jpg"><img  src="image/beekeeper15-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Подарочный бочонок
+    </li>
+        <li class=" integration portfolio-item">
+            <a rel="simplebox" href="image/beekeeper16.jpg"><img src="image/beekeeper16-1.jpg" width="200" height="200" class="superbox-img"/></a>
+      Мммм
+    </li>
+<script type="text/javascript">
+(function(){
+var boxes=[],els,i,l;
+if(document.querySelectorAll){
+els=document.querySelectorAll('a[rel=simplebox]');
+Box.getStyles('simplebox_css','simplebox.css');
+Box.getScripts('simplebox_js','simplebox.js',function(){
+simplebox.init();
+for(i=0,l=els.length;i<l;++i)
+simplebox.start(els[i]);
+simplebox.start('a[rel=simplebox_group]');
+});
+}
+})();
+</script>
+
+
+
+
+</ul>
+
+ </body>
+
+<body id="body" class="dark-mode">
+  <h1></h1>
+
+  <style>
+.Absolute-Center
+{
+  position: fixed;
+  bottom: 0; left: 0;
+}
+</style>
+
+<div class = "Absolute-Center">
+    <buttonnn style = "font-size:20px" type="button" name="dark_light" onclick="toggleDarkLight()" title=""><span class="fas fa-cloud-sun"> DARK/LIGHT</buttonnn>
+
+    <p></p>
+</div>
+
+<script type="text/javascript">
+function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+    </script>
+</body>
+
+ <div class = "Absolute-Center">
+ <body>
+
+    <footer>
+      <small>Copyright © <time datetime="2016">2016</time> Частная пасека Алтая; 8(923)243-99-95</small>
+    </footer>
+</body>
+ </div>
+</html>
+
+
+
+
+

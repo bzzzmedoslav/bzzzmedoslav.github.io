@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bzzz</title>
+<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/lib.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+  <style>
+.Absolute-Center
+{
+  margin: auto;
+  position: absolute;
+  top: -1; left: 10; bottom: 0; right: 0;
+}
+</style>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/simplebox_util.js"></script>
+
+</head>
+<body>
+<figure>
+<header>
+<!--  <h1>123</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" style="color: #FF8C00">Главная</a></li>
+        <li><a href="about.html" style="color: #FF8C00">О породе</a></li>
+        <li><a href="test.html" style="color: #FF8C00">Здоровье</a></li>
+      </ul>
+    </nav> -->
+
+
+    <a href="index.html" class="buttonq orange">ГЛАВНАЯ</a>
+    <a href="bee2.html" class="buttonq orange">КОНТАКТЫ</a>
+    <a href="bee4.html" class="buttonq orange">ГАЛЕРЕЯ</a>
+    <a href="test.html" class="buttonq orange">ПРОДУКЦИЯ</a>
+    <a href="bee3.html" class="buttonq orange">ИГРЫ</a>
+    <!--<buttont class="button orange" id="red2" onClick='location.href="test.html"'>RED</buttont>
+    <buttont id="blue">BLUE</buttont>
+    <buttont id="green">GREEN</buttont>
+    <buttont id="orange">ORANGE</buttont>-->
+   <!-- <buttont id="yellow"><a class="notpodcherk" href="test.html" style="color: #FF8C00">YELLOW</a></buttont>-->
+
+
+
+
+  </header>
+    </figure>
+</body>
+<body>
+<figure>
+
+<!--<figcaption>Подпись сверху</figcaption>-->
+
+    <div class="container">
+<figcaption>Пожалуйста, оцените качество нашего мёда</figcaption>
+            <form class="toggle">
+
+            <input type="radio" id="but1" name="but" />
+            <label for="but1"><span class="fas fa-smile"></label>
+
+
+            <input type="radio" id="but2" name="but" />
+            <label for="but2"><span class="fas fa-frown"></label>
+
+            <div id="flap"></div>
+
+        </form>
+
+<button id="red">Голосовать</button>
+
+    </div>
+</figure>
+    <script>
+        let st = {};
+        st.flap = document.querySelector("#flap");
+        st.toggle = document.querySelector(".toggle");
+        st.but1 = document.querySelector("#but1");
+        st.but2 = document.querySelector("#but2");
+        st.flap.addEventListener("transitionend", () => {
+            if (st.but1.checked) {
+                st.toggle.style.transform = "rotateY(-15deg)";
+                setTimeout(() => st.toggle.style.transform = "", 400);
+            } else {
+                st.toggle.style.transform = "rotateY(15deg)";
+                setTimeout(() => st.toggle.style.transform = "", 400)
+            }
+        })
+        st.clickHandler = (e) => {
+            if (e.target.tagName === "LABEL") {
+                setTimeout(() => {
+                    st.flap.children[0].textContent = e.target.textContent;},250);
+                }
+            }
+        document.addEventListener("DOMContentLoaded", () => {
+            st.flap.children[0].textContent = st.but2.nextElementSibling.textContent;
+        });
+        document.addEventListener("click",(e)=>st.clickHandler(e))
+    </script>
+    <script>
+
+        document.getElementById("red").addEventListener("click", clickFunction)
+
+        function clickFunction() {
+            alert("Спасибо за отзыв. Ваше мнение обязательно будет передано нашим пчёлкам")
+        }
+
+    </script>
+
+</body>
+
+
+<body id="body" class="dark-mode">
+  <h1></h1>
+
+  <style>
+.Absolute-Center
+{
+  position: fixed;
+  bottom: 0; left: 0;
+}
+</style>
+
+<div class = "Absolute-Center">
+    <buttonnn style = "font-size:20px" type="button" name="dark_light" onclick="toggleDarkLight()" title=""><span class="fas fa-cloud-sun"> DARK/LIGHT</buttonnn>
+
+    <p></p>
+</div>
+
+<script type="text/javascript">
+function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+    </script>
+</body>
+
+ <div class = "Absolute-Center">
+ <body>
+
+    <footer>
+      <small>Copyright © <time datetime="2016">2016</time> Частная пасека Алтая; 8(923)243-99-95</small>
+    </footer>
+</body>
+ </div>
+</html>
+
+
+
+
+

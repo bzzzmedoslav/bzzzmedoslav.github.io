@@ -1,0 +1,361 @@
+﻿body {
+    display: flex;
+    font-family: sans-serif;
+    background: #262626;
+	min-height: 63em;
+	
+}
+.container {
+  width: 17em;
+  position: absolute;
+  
+  bottom: -100px; 
+  right: 10;
+  left: 0
+}
+.toggle{
+    position:relative;
+    border: solid 6px #FF8C00;
+    border-radius:55px;
+    transition: transform cubic-bezier(0,0,0.30,2) .4s;
+    transform-style:preserve-3d;
+    perspective:800px;
+	margin: 0px 0 0 5px;
+}
+.toggle>input[type="radio"]{
+    display:none;
+}
+.toggle > #but1:checked ~ #flap{
+    transform:rotateY(-180deg);
+}
+.toggle > #but1:checked ~ #flap > .content{
+    transform:rotateY(180deg)
+}
+.toggle > #but2:checked ~ #flap {
+    transform: rotateY(0deg);
+}
+.toggle > label{
+    display:inline-block;
+    min-width:60px;
+    padding:30px;
+    font-size:30px;
+    text-align:center;
+    color:#FF8C00;
+    cursor:pointer;
+}
+.toggle > label,
+.toggle > #flap{
+    font-weight:bold;
+    text-transform:capitalize;
+}
+.toggle > #flap{
+    position:absolute;
+    top: calc(0px - 6px);
+    left:50%;
+    height:calc(100% + 12px);
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    background:#FF8C00;
+    border-top-right-radius:55px;
+    border-bottom-right-radius:55px;
+    
+    transform-origin:left;
+    transition: transform cubic-bezier(0.4,0,0.2,1) .5s;
+		
+}
+.toggle > #flap > .content{
+    color:#262626;
+    transition:transform 0s linear .25s;
+    transform-style:preserve-3d; 
+}
+.content {
+  width: 60%;
+  position: absolute;
+
+  bottom: -50%;
+  right: 10;
+  left: 22%
+}
+
+.content-sec {
+  width: 60%;
+  position: absolute;
+
+  bottom: -10%;
+  right: 10;
+  left: 22%
+}
+button {
+            display: block;
+            color: #FF8C00;
+            border-radius: 22px;
+            padding: 15px;
+            outline: none;
+            background: #262626;
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: 0px 10px 20px #262626;
+            cursor: pointer;
+            text-shadow: 0px 0px 10px #262626;
+            transition: .5s;
+        }
+        button:hover{
+            background: #eee;
+        }
+
+button{
+    position:relative;
+    border: solid 2px #FF8C00;
+    border-radius:55px;
+margin: 5px 0 0 80px;
+}
+
+
+
+
+body.dark-mode {
+  background-color: #262626;
+  color: #eee;
+  
+}
+body.dark-mode a {
+  color: #FF8C00;
+  
+}
+body.dark-mode buttonn {
+  background-color: #eee;
+  color: #262626;
+}
+
+body.light-mode {
+  background-color: #eee;
+  color: #262626;
+}
+body.light-mode a {
+  color: #262626;
+}
+body.light-mode buttonn {
+  background-color: #262626;
+  color: #eee;
+}
+
+
+#buttonn {
+    position: fixed;
+    bottom: 560px;
+    right: 1000px; 
+}
+
+figure {
+  font-family: sans-serif;
+  display: inline-block; /* Выстраиваем по горизонтали */
+  padding: 10px; /* Поля */
+  margin: 0 1em 0 0; /* Отступ справа */
+  vertical-align: top; /* Выравниваем по верхнему краю */
+  color:#FF8C00;
+}
+figcaption {
+   text-align: center; /* Выравниваем по центру */
+}
+figure.right figcaption {
+   float: right; /* Добавляем текст справа */
+   padding: 5px; /* Поля вокруг текста */
+}
+
+
+buttont {
+            display: block;
+            color: #FF8C00;
+            border-radius: 22px;
+			text-align:center;
+            padding: 15px;
+            outline: none;
+            background: #262626;
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: 0px 10px 20px #262626;
+            cursor: pointer;
+            text-shadow: 0px 0px 10px #262626;
+            transition: .5s;
+        }
+        buttont:hover{
+            background: #eee;
+        }
+
+buttont{
+    position:relative;
+    border: solid 2px #FF8C00;
+    border-radius:55px;
+margin: 0 0 0 0;
+}
+
+a{ 
+	color: blue; /* цвет ссылки синий */
+	font-size:12px; /* размер 12 пикселей */
+	} 
+	.podcherk /* у ссылки с классом podcherk будет подчеркивание всегда */
+	{ 
+	text-decoration: underline 
+	} 
+	.notpodcherk /* у ссылки с классом notpodcherk не будет подчеркивания по умолчанию */ 
+	{ 
+	text-decoration: none
+	}  
+	.notpodcherk:hover 
+	{ 
+	text-decoration: none 
+	}
+
+	
+	
+/* General Button Style */
+.buttonq{
+  position: relative;
+	display:block;
+	color: #FF8C00;
+	font-family: sans-serif;
+	background: transparent;
+	width:200px;
+	height:35px;
+	line-height:60px;
+	text-align:center;
+	font-size:30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:40px auto;
+}
+.buttonq:before, .buttonq:after {
+	width:200px;
+  left: 0px;
+	height:27px;
+  z-index: -1;
+}
+.violet{ color: violet; }
+.indigo{ color: indigo; }
+.slateblue{ color: slateblue; }
+.mediumseagreen{ color: mediumseagreen; }
+.yellowgreen{ color: yellowgreen; }
+.orange{ color: #FF8C00; }
+.indianred{ color: indianred; }
+/* Button Border Style */
+.violet:before,.violet:after {
+	border: 3px solid violet;
+}
+.indigo:before,.indigo:after {
+	border: 3px solid indigo;
+}
+.slateblue:before,.slateblue:after {
+	border: 3px solid slateblue;
+}
+.mediumseagreen:before,.mediumseagreen:after {
+	border: 3px solid mediumseagreen;
+}
+.yellowgreen:before,.yellowgreen:after {
+	border: 3px solid yellowgreen;
+}
+.orange:before,.orange:after {
+	border: 3px solid orange;
+}
+.indianred:before,.indianred:after {
+	border: 3px solid indianred;
+}
+
+.buttonq:before{
+  position: absolute;
+  content: '';
+  border-bottom: none;
+  -webkit-transform: perspective(15px) rotateX(5deg);
+  -moz-transform: perspective(15px) rotateX(5deg);
+  transform: perspective(15px) rotateX(5deg);  
+}
+.buttonq:after{
+  position: absolute;
+  top: 32px;
+  content: '';
+  border-top: none;
+  -webkit-transform: perspective(15px) rotateX(-5deg);
+  -moz-transform: perspective(15px) rotateX(-5deg);
+  transform: perspective(15px) rotateX(-5deg);
+}
+
+/* Button Hover Style */
+.violet:hover:before, .violet:hover:after {
+	background: violet;
+}
+.indigo:hover:before, .indigo:hover:after {
+	background: indigo;
+}
+.mediumseagreen:hover:before, .mediumseagreen:hover:after {
+	background: mediumseagreen;
+}
+.slateblue:hover:before, .slateblue:hover:after {
+	background: slateblue;
+}
+.yellowgreen:hover:before, .yellowgreen:hover:after {
+	background: yellowgreen;
+}
+.orange:hover:before, .orange:hover:after {
+	background: #FF8C00;
+}
+.indianred:hover:before, .indianred:hover:after {
+	background: indianred;
+}
+
+.buttonq:hover{
+	color:#fff;
+}
+
+buttonnn {
+            display: block;
+            color: #FF8C00;
+            border-radius: 22px;
+            padding: 15px;
+			width:180px;
+            outline: none;
+            background: #262626;
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: 0px 10px 20px #262626;
+            cursor: pointer;
+            text-shadow: 0px 0px 10px #262626;
+            transition: .5s;
+        }
+        buttonnn:hover{
+            background: #eee;
+        }
+
+buttonnn{
+    position:relative;
+    border: solid 2px #FF8C00;
+    border-radius:55px;
+margin: 5px 0 0 0px;
+}
+
+butto {
+            display: block;
+            color: #FF8C00;
+            border-radius: 22px;
+            padding: 23px;
+			height: 42px;
+            outline: none;
+            background: #262626;
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: 0px 10px 20px #262626;
+            cursor: pointer;
+            text-shadow: 0px 0px 10px #262626;
+            transition: .5s;
+        }
+        butto:hover{
+            background: #eee;
+        }
+
+butto{
+    position:relative;
+    border: solid 2px #262626;
+    border-radius:55px;
+margin: 5px 0 0 60px;
+}
