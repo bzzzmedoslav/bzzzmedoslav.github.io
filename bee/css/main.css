@@ -74,12 +74,14 @@
     transform-style:preserve-3d; 
 }
 .content {
-  width: 60%;
+ 
   position: absolute;
-
-  bottom: -60%;
-  right: 10%;
-  left: 300px;
+  width: 50%;
+  bottom: -30em;
+  right: 1em;
+  left: 20em;
+    text-align: justify;
+  text-justify: inter-word;
 }
 
 .content-sec {
@@ -155,6 +157,7 @@ figure {
   font-family: sans-serif;
   display: inline-block; /* Выстраиваем по горизонтали */
   padding: 10px; /* Поля */
+  height:290px;
   margin: 0 1em 0 0; /* Отступ справа */
   vertical-align: top; /* Выравниваем по верхнему краю */
   color:#FF8C00;
